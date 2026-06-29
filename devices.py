@@ -1,5 +1,6 @@
 import subprocess
 
+
 def detect_devices():
     devices = []
 
@@ -16,14 +17,21 @@ def detect_devices():
             serial = line.split("\t")[0]
 
             model = subprocess.run(
-                ["adb", "-s", serial, "shell", "getprop", "ro.product.model"],
+                [
+                    "adb",
+                    "-s",
+                    serial,
+                    "shell",
+                    "getprop",
+                    "ro.product.model"
+                ],
                 capture_output=True,
                 text=True
             ).stdout.strip()
 
             devices.append({
-                "model": model,
-                "serial": serial
+                "serial": serial,
+                "model": model
             })
 
     return devices
