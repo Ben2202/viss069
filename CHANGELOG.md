@@ -3,11 +3,13 @@
 ## Unreleased
 
 ### Added
+- Added a README with the project description and usage notes.
 - Added a Stop Sync button to the main action row.
 - Added an English changelog.
 - Added `customtkinter` to the project requirements.
 
 ### Changed
+- Renamed the visible app title to `viss069`.
 - Reworked the action buttons so they appear in one equal-width row.
 - Reworked detected devices into equal-size cards laid out side by side.
 - Reused persistent input injectors per follower device instead of opening a new ADB shell for every event.

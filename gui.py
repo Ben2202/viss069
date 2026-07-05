@@ -14,7 +14,7 @@ class MirrorGUI(ctk.CTk):
         ctk.set_appearance_mode("Dark")
         ctk.set_default_color_theme("blue")
 
-        self.title("Android Mirror Manager")
+        self.title("viss069")
         self.geometry("1000x720")
 
         self.devices = []
@@ -26,7 +26,7 @@ class MirrorGUI(ctk.CTk):
 
         title = ctk.CTkLabel(
             self,
-            text="Android Mirror Manager",
+            text="viss069",
             font=("Arial", 30, "bold")
         )
         title.pack(pady=20)
